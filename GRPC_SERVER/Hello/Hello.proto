@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Hello;
+
+option go_package = "github.com/rajeshreddyt/GrpcServer";
+
+service YourService {
+    rpc YourMethod (YourRequest) returns (YourResponse) {}
+}
+
+message YourRequest {
+    string name = 1;
+}
+
+message YourResponse {
+    string name = 1;
+}
